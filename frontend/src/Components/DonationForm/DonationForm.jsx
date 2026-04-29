@@ -121,7 +121,7 @@ const DonationForm = () => {
             />
           </label>
           <label>কোন খাতে দান করতে চান : 
-          <select className="sector-selection" name="sector" onChange={(e) => setSector(e.target.value)} required>
+          <select className="sector-selection" name="sector" required>
             <option value="জরুরী বন্যা তহবিল">জরুরী বন্যা তহবিল</option>
             <option value="শীতার্ত তহবিল">শীতার্ত তহবিল</option>
             <option value="যাকাত তহবিল">যাকাত তহবিল</option>
