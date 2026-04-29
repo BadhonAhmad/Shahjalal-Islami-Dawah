@@ -6,7 +6,6 @@ const DonationForm = () => {
   const [customAmount, setCustomAmount] = useState("");
   const [name, setName] = useState("");
   const [mobile, setMobile] = useState("");
-  const [sector, setSector] = useState("সাধারণ");
 
   const handleAmountChange = (amount) => {
     setDonationAmount(amount);
