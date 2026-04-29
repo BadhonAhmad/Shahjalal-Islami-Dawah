@@ -1,18 +1,22 @@
 import React from 'react';
-import './Footer.css';
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer-content">
-        <p>
-          Copyright © 2024 <strong>Manaratus Sunnah
-          </strong> - all rights reserved.
-        </p>
-       
-        <div className="footer-links">
-          <a href="/terms-and-conditions" className="footer-link">Terms and conditions</a> | 
-          <a href="/privacy-policy" className="footer-link"> Privacy Policy</a>
+    <footer className="bg-gray-900 text-gray-300">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div className="text-center space-y-3">
+          <p className="text-sm">
+            Copyright &copy; 2024 <span className="text-white font-semibold">শাহজালাল ইসলামী দাওয়াহ সেন্টার</span> - all rights reserved.
+          </p>
+          <div className="flex items-center justify-center gap-2 text-sm">
+            <a href="/terms-and-conditions" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+              Terms and conditions
+            </a>
+            <span className="text-gray-600">|</span>
+            <a href="/privacy-policy" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+              Privacy Policy
+            </a>
+          </div>
         </div>
       </div>
     </footer>

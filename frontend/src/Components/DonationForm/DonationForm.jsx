@@ -15,6 +15,8 @@ const DonationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    /*
+    // Original payment API call — disabled for static site
     const date = new Date().toISOString();
 
     fetch("http://localhost:8080/api/v1/user/donation",
@@ -32,9 +34,11 @@ const DonationForm = () => {
     ).then((res) => res.json())
      .then((result) => {
       if(result.url)window.location.replace(result.url)
-      else alert(`hello ${result.message}`) 
-      
+      else alert(`hello ${result.message}`)
+
      })
+    */
+    alert("অনুদান প্রক্রিয়া শীঘ্রই চালু হবে। ধন্যবাদ!\n(Donation feature coming soon. Thank you!)");
   };
 
   return (
@@ -80,9 +84,9 @@ const DonationForm = () => {
        <div className="donation-form-container">
         <h3>সাধারণ তহবিল</h3>
         <p>
-          সুস্পষ্ট কোনো খাতে দান করলে সেটাই সে খাতে ব্যয় করে থাকে মানারাতুস সুন্নাহ
-          ফাউন্ডেশন। আর সাধারণ তহবিলের অর্থ ফাউন্ডেশন পরিচালিত সকল কল্যাণমুলক
-          কার্যক্রমের জন্য উন্মুক্ত থাকে এবং মানারাতুস সুন্নাহ'র দিনি শিক্ষা, মানব সেবা
+          সুস্পষ্ট কোনো খাতে দান করলে সেটাই সে খাতে ব্যয় করে থাকে শাহজালাল ইসলামী দাওয়াহ
+          সেন্টার। আর সাধারণ তহবিলের অর্থ সেন্টার পরিচালিত সকল কল্যাণমুলক
+          কার্যক্রমের জন্য উন্মুক্ত থাকে এবং শাহজালাল ইসলামী দাওয়াহ সেন্টারের দ্বীনি শিক্ষা, মানব সেবা
           ও দাওয়ামূলক যাবতীয় উদ্যোগ পরিচালনায় এই খাতের অর্থ ব্যয় করা হয়।
         </p>
         <form onSubmit={handleSubmit}>
