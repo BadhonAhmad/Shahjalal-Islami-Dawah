@@ -40,13 +40,13 @@ const Contact = () => {
                 যেকোনো প্রয়োজনে আমাদের ইমেইল করুন। আমরা শীঘ্রই আপনার বার্তার উত্তর দেব।
               </p>
               <a
-                href="mailto:nobelbadhon61@gmail.com"
+                href="mailto:tupayelahamad811@gmail.com"
                 className="inline-block px-8 py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
               >
                 ইমেইল করুন
               </a>
               <p className="text-gray-500 text-sm break-all">
-                nobelbadhon61@gmail.com
+                tupayelahamad811@gmail.com
               </p>
             </div>
 
@@ -77,7 +77,7 @@ const Contact = () => {
                 <img src={icon_youtube} alt="YouTube" className="w-5 h-5" />
               </a>
               <a
-                href="mailto:nobelbadhon61@gmail.com"
+                href="mailto:tupayelahamad811@gmail.com"
                 className="w-10 h-10 rounded-full bg-amber-100 hover:bg-amber-200 flex items-center justify-center transition-all duration-200 hover:scale-110"
               >
                 <img src={icon_gmail} alt="Gmail" className="w-5 h-5" />
@@ -106,7 +106,7 @@ const Contact = () => {
 
                 <div>
                   <p className="font-semibold text-gray-800 text-sm">ইমেইল</p>
-                  <p className="text-gray-600 text-sm">nobelbadhon61@gmail.com</p>
+                  <p className="text-gray-600 text-sm">tupayelahamad811@gmail.com</p>
                 </div>
               </div>
             </div>

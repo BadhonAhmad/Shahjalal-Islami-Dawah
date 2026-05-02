@@ -2,12 +2,12 @@ import React, { useState } from "react";
 
 const DonateSection = () => {
   const [showPopup, setShowPopup] = useState(false);
-  const [copied, setCopied] = useState(null);
+  const [copied, setCopied] = useState(false);
 
-  const handleCopy = (text, label) => {
+  const handleCopy = (text) => {
     navigator.clipboard.writeText(text).then(() => {
-      setCopied(label);
-      setTimeout(() => setCopied(null), 1500);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
     });
   };
 
@@ -97,63 +97,33 @@ const DonateSection = () => {
               <p className="text-gray-500 text-sm mt-1">আল্লাহ আপনার দান কবুল করুন</p>
             </div>
 
-            {/* Payment numbers */}
-            <div className="space-y-3">
-              {/* bKash */}
-              <div className="bg-gradient-to-br from-pink-50 to-pink-100 rounded-2xl p-5 border border-pink-200">
-                <div className="flex items-center justify-center gap-2 mb-3">
-                  <div className="w-7 h-7 bg-pink-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-xs">b</span>
-                  </div>
-                  <span className="text-base font-bold text-pink-600">বিকাশ</span>
+            {/* Payment info */}
+            <div className="bg-gradient-to-br from-emerald-50 to-gray-50 rounded-2xl p-6 border border-emerald-200">
+              {/* Payment methods */}
+              <div className="flex items-center justify-center gap-3 mb-5">
+                <div className="w-8 h-8 bg-pink-500 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">b</span>
                 </div>
-                <div className="bg-white rounded-xl py-3 px-4 border-2 border-dashed border-pink-300 flex items-center justify-between">
-                  <p className="text-2xl font-bold text-gray-800 tracking-wider font-mono">01626947430</p>
-                  <button
-                    onClick={() => handleCopy("01626947430", "bkash")}
-                    className="px-3 py-1.5 bg-pink-500 hover:bg-pink-600 text-white text-sm font-medium rounded-lg transition-all duration-200 shrink-0"
-                  >
-                    {copied === "bkash" ? "Copied!" : "Copy"}
-                  </button>
+                <span className="text-gray-400 font-medium">/</span>
+                <div className="w-8 h-8 bg-orange-500 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">N</span>
+                </div>
+                <span className="text-gray-400 font-medium">/</span>
+                <div className="w-8 h-8 bg-purple-500 rounded-lg flex items-center justify-center">
+                  <span className="text-white font-bold text-xs">R</span>
                 </div>
               </div>
+              <p className="text-center text-sm text-gray-500 mb-3">বিকাশ / নগদ / রকেট</p>
 
-              {/* Nagad */}
-              <div className="bg-gradient-to-br from-orange-50 to-orange-100 rounded-2xl p-5 border border-orange-200">
-                <div className="flex items-center justify-center gap-2 mb-3">
-                  <div className="w-7 h-7 bg-orange-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-xs">N</span>
-                  </div>
-                  <span className="text-base font-bold text-orange-600">নগদ</span>
-                </div>
-                <div className="bg-white rounded-xl py-3 px-4 border-2 border-dashed border-orange-300 flex items-center justify-between">
-                  <p className="text-2xl font-bold text-gray-800 tracking-wider font-mono">01626947430</p>
-                  <button
-                    onClick={() => handleCopy("01626947430", "nagad")}
-                    className="px-3 py-1.5 bg-orange-500 hover:bg-orange-600 text-white text-sm font-medium rounded-lg transition-all duration-200 shrink-0"
-                  >
-                    {copied === "nagad" ? "Copied!" : "Copy"}
-                  </button>
-                </div>
-              </div>
-
-              {/* Rocket */}
-              <div className="bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl p-5 border border-purple-200">
-                <div className="flex items-center justify-center gap-2 mb-3">
-                  <div className="w-7 h-7 bg-purple-500 rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-xs">R</span>
-                  </div>
-                  <span className="text-base font-bold text-purple-600">রকেট</span>
-                </div>
-                <div className="bg-white rounded-xl py-3 px-4 border-2 border-dashed border-purple-300 flex items-center justify-between">
-                  <p className="text-2xl font-bold text-gray-800 tracking-wider font-mono">01626947430</p>
-                  <button
-                    onClick={() => handleCopy("01626947430", "rocket")}
-                    className="px-3 py-1.5 bg-purple-500 hover:bg-purple-600 text-white text-sm font-medium rounded-lg transition-all duration-200 shrink-0"
-                  >
-                    {copied === "rocket" ? "Copied!" : "Copy"}
-                  </button>
-                </div>
+              {/* Number */}
+              <div className="bg-white rounded-xl py-4 px-5 border-2 border-dashed border-emerald-300 flex items-center justify-between">
+                <p className="text-2xl font-bold text-gray-800 tracking-wider font-mono">01626947430</p>
+                <button
+                  onClick={() => handleCopy("01626947430")}
+                  className="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium rounded-lg transition-all duration-200 shrink-0"
+                >
+                  {copied ? "Copied!" : "Copy"}
+                </button>
               </div>
             </div>
 

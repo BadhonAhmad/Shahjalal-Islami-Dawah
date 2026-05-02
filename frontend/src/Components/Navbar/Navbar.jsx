@@ -9,13 +9,28 @@ const Navbar = () => {
   const navbarRef = useRef(null);
   const navigate = useNavigate();
 
+  const scrollToElement = (id) => {
+    const tryScroll = (attempts = 0) => {
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth" });
+      } else if (attempts < 10) {
+        setTimeout(() => tryScroll(attempts + 1), 200);
+      }
+    };
+    tryScroll();
+  };
+
   const handleDonateClick = () => {
     setIsNavbarVisible(false);
     navigate("/", { replace: false });
-    setTimeout(() => {
-      const el = document.getElementById("donate-section");
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    }, 300);
+    scrollToElement("donate-section");
+  };
+
+  const handleContactClick = () => {
+    setIsNavbarVisible(false);
+    navigate("/", { replace: false });
+    scrollToElement("contact-page");
   };
 
   const handleMenuItemClick = (menuItem) => {
@@ -140,9 +155,8 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <a
-                  href="#contact-page"
-                  onClick={() => handleMenuItemClick("jogajog")}
+                <button
+                  onClick={handleContactClick}
                   className="relative px-5 py-3 rounded-lg text-sm font-medium transition-all duration-300 inline-block group"
                 >
                   <span
@@ -168,7 +182,7 @@ const Navbar = () => {
                         : "w-0 bg-amber-400 group-hover:w-4"
                     }`}
                   />
-                </a>
+                </button>
               </li>
             </ul>
           </div>
@@ -229,14 +243,13 @@ const Navbar = () => {
                 </li>
               ))}
               <li>
-                <a
-                  href="#contact-page"
+                <button
                   className={`relative flex items-center gap-3 px-4 py-3.5 rounded-xl text-base font-medium transition-all duration-300 overflow-hidden group ${
                     activeMenuItem === "jogajog"
                       ? "text-white"
                       : "text-emerald-200 hover:text-white"
                   }`}
-                  onClick={() => handleMenuItemClick("jogajog")}
+                  onClick={handleContactClick}
                 >
                   <span
                     className={`absolute inset-0 rounded-xl transition-all duration-300 ${
@@ -253,7 +266,7 @@ const Navbar = () => {
                     }`}
                   />
                   <span className="relative z-10">যোগাযোগ</span>
-                </a>
+                </button>
               </li>
             </ul>
 
