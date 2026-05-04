@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "../Assets/Manaratus_Sunna_icon.png.png";
 import nav_bar_icon from "../Assets/nav_bar_icon.png";
+
+const logo = "/logo/logo.jpeg";
 
 const Navbar = () => {
   const [activeMenuItem, setActiveMenuItem] = useState("home");
@@ -74,19 +75,16 @@ const Navbar = () => {
           onClick={() => setIsNavbarVisible(false)}
         />
       )}
-      <nav className="sticky top-0 z-50 bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-900 shadow-lg">
+      <nav className="sticky top-0 z-50 bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-900 shadow-lg overflow-visible">
         {/* Subtle top accent line */}
         <div className="h-[2px] bg-gradient-to-r from-transparent via-amber-400 to-transparent" />
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top row: logo + donate button */}
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between py-4">
             <div className="flex items-center gap-4">
               <div className="relative group">
-                <div className="absolute -inset-1 bg-amber-400/30 rounded-full blur-md group-hover:bg-amber-400/50 transition-all duration-500" />
-                <div className="relative h-14 w-14 rounded-full bg-gradient-to-br from-white/20 to-white/5 p-[2px] shadow-lg">
-                  <img src={logo} alt="Logo" className="h-full w-full rounded-full object-cover" />
-                </div>
+                <img src={logo} alt="Logo" className="h-20 w-20 rounded-lg object-contain" />
               </div>
               <div>
                 <p className="text-xl md:text-2xl font-bold text-white leading-tight tracking-wide">
@@ -202,7 +200,7 @@ const Navbar = () => {
             <div className="flex items-center gap-3 mb-10 pb-6 border-b border-white/10">
               <div className="relative">
                 <div className="absolute -inset-1 bg-amber-400/20 rounded-full blur" />
-                <img src={logo} alt="Logo" className="relative h-12 w-12 rounded-full ring-2 ring-amber-400/40" />
+                <img src={logo} alt="Logo" className="relative h-16 w-16 rounded-lg object-contain" />
               </div>
               <div>
                 <p className="font-bold text-white text-lg">শাহজালাল ইসলামী দাওয়াহ সেন্টার</p>

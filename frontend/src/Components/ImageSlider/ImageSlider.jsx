@@ -1,28 +1,32 @@
 import React, { useState, useEffect } from 'react';
-import poster1 from '../Assets/Poster_1.jpg';
-import poster2 from '../Assets/Poster_2.jpg';
-import poster3 from '../Assets/Poster_3.jpg';
-import poster4 from '../Assets/Poster_4.jpg';
-import poster5 from '../Assets/Poster_5.jpg';
-import poster6 from '../Assets/Poster_6.jpg';
-import poster7 from '../Assets/Poster_7.jpg';
-import poster8 from '../Assets/Poster_8.jpg';
-import poster9 from '../Assets/Poster_9.jpg';
-import poster10 from '../Assets/poster_10.jpg';
 
 const ImageSlider = () => {
   const [count, setCount] = useState(0);
   const [forward, setForward] = useState(true);
 
-  const images = [
-    poster1, poster2, poster3, poster4, poster5,
-    poster6, poster7, poster8, poster9, poster10
+  const goNext = () => {
+    setCount((count + 1) % slides.length);
+    setForward(true);
+  };
+
+  const goPrev = () => {
+    setCount((count - 1 + slides.length) % slides.length);
+    setForward(false);
+  };
+
+  const slides = [
+    { src: '/dawah/dawah to non muslim8 (2).jpeg', title: 'অমুসলিমদের মাঝে দাওয়াহ', subtitle: 'প্রজ্ঞার সাথে ইসলামের দাওয়াত পৌঁছে দেওয়া' },
+    { src: '/dawah/dawah to non muslim2.jpeg', title: 'অমুসলিমদের মাঝে দাওয়াহ', subtitle: 'সত্যের পথে আহ্বানের মহান কাজ' },
+    { src: '/dawah/dawah to non muslim5.jpeg', title: 'অমুসলিমদের মাঝে দাওয়াহ', subtitle: 'হিকমাহর সাথে ইসলামের দাওয়াত পৌঁছে দেওয়া' },
+    { src: '/halakah/halakah2.jpeg', title: 'ইলমের হালাকা', subtitle: 'মসজিদভিত্তিক নিয়মিত ইলমের মাহফিল' },
+    { src: '/FoodDistribution/foods.jpeg', title: 'খাদ্য বিতরণ', subtitle: 'সুখে-দুঃখে নওমুসলিম ভাইদের পাশে' },
+    { src: '/EidGift/EidGiftToNouMuslim.jpeg', title: 'নওমুসলিমদের ঈদের উপহার', subtitle: 'ঈদের আনন্দ সবার মাঝে ছড়িয়ে দেওয়া' },
   ];
 
   useEffect(() => {
     const timer = setTimeout(() => {
       if (forward) {
-        if (count === images.length - 1) {
+        if (count === slides.length - 1) {
           setForward(false);
         } else {
           setCount(count + 1);
@@ -37,7 +41,7 @@ const ImageSlider = () => {
     }, 3000);
 
     return () => clearTimeout(timer);
-  }, [count, forward, images.length]);
+  }, [count, forward, slides.length]);
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
@@ -46,11 +50,11 @@ const ImageSlider = () => {
           className="flex h-full transition-all duration-1000 ease-in-out"
           style={{ transform: `translateX(-${count * 100}%)` }}
         >
-          {images.map((image, index) => (
+          {slides.map((slide, index) => (
             <div key={index} className="min-w-full h-full flex-shrink-0">
               <img
-                src={image}
-                alt={`Poster ${index + 1}`}
+                src={slide.src}
+                alt={slide.title}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -58,11 +62,37 @@ const ImageSlider = () => {
         </div>
 
         {/* Gradient overlay */}
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black/30 to-transparent pointer-events-none" />
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
+
+        {/* Previous button */}
+        <button
+          onClick={goPrev}
+          className="absolute left-3 md:left-5 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-black/30 hover:bg-black/50 text-white text-xl md:text-2xl transition-all duration-300 backdrop-blur-sm"
+        >
+          &#8249;
+        </button>
+
+        {/* Next button */}
+        <button
+          onClick={goNext}
+          className="absolute right-3 md:right-5 top-1/2 -translate-y-1/2 w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-full bg-black/30 hover:bg-black/50 text-white text-xl md:text-2xl transition-all duration-300 backdrop-blur-sm"
+        >
+          &#8250;
+        </button>
+
+        {/* Slide text */}
+        <div className="absolute bottom-10 left-0 right-0 text-center px-6 pointer-events-none">
+          <h2 className="text-white text-2xl md:text-4xl font-bold drop-shadow-lg mb-1 transition-all duration-700">
+            {slides[count].title}
+          </h2>
+          <p className="text-white/90 text-sm md:text-lg drop-shadow-md transition-all duration-700">
+            {slides[count].subtitle}
+          </p>
+        </div>
 
         {/* Dots indicator */}
         <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-          {images.map((_, index) => (
+          {slides.map((_, index) => (
             <button
               key={index}
               onClick={() => setCount(index)}
