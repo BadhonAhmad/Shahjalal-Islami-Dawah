@@ -69,7 +69,7 @@ const contentMap = {
     ),
   },
   'activity-2': {
-    image: '/quranshikkha/sorbosadharon.jpeg',
+    image: '/QuranShikkha/sorbosadharon.jpeg',
     content: (
       <div className="leading-relaxed text-gray-700 text-base md:text-lg space-y-4">
         <p>
@@ -82,7 +82,7 @@ const contentMap = {
     ),
   },
   'activity-3': {
-    image: '/quranshikkha/boyoshokoder_quran_shikkha.jpg',
+    image: '/QuranShikkha/boyoshokoder_quran_shikkha.jpg',
     content: (
       <div className="leading-relaxed text-gray-700 text-base md:text-lg space-y-4">
         <p>
@@ -150,7 +150,7 @@ const contentMap = {
     ),
   },
   'activity-8': {
-    image: '/childs/halakah3_prize_giving.jpeg',
+    image: '/Childs/halakah3_prize_giving.jpeg',
     content: (
       <div className="leading-relaxed text-gray-700 text-base md:text-lg space-y-4">
         <p>
