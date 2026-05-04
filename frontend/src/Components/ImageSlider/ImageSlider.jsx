@@ -44,18 +44,18 @@ const ImageSlider = () => {
   }, [count, forward, slides.length]);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+    <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 pt-4 sm:pt-6">
       <div className="relative w-full h-[45vh] sm:h-[55vh] md:h-[65vh] lg:h-[70vh] rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl">
         <div
-          className="flex h-full transition-all duration-1000 ease-in-out"
+          className="flex h-full w-full transition-transform duration-1000 ease-in-out"
           style={{ transform: `translateX(-${count * 100}%)` }}
         >
           {slides.map((slide, index) => (
-            <div key={index} className="min-w-full h-full flex-shrink-0">
+            <div key={index} className="relative w-full h-full flex-shrink-0">
               <img
                 src={slide.src}
                 alt={slide.title}
-                className="w-full h-full object-cover"
+                className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
           ))}
