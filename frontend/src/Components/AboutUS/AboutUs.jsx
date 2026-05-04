@@ -175,40 +175,29 @@ const AboutUs = () => {
               <div className="w-16 h-0.5 bg-emerald-300 mb-6 rounded-full" />
 
               {contentMap[activeTab]}
-
-              {/* Mobile arrow navigation */}
-              <div className="flex md:hidden items-center justify-between mt-8 pt-4 border-t border-gray-100">
-                <button
-                  onClick={goPrev}
-                  disabled={activeIndex === 0}
-                  className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                    activeIndex === 0
-                      ? "text-gray-300 cursor-not-allowed"
-                      : "text-emerald-600 hover:bg-emerald-50"
-                  }`}
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
-                  </svg>
-                  আগের
-                </button>
-                <span className="text-xs text-gray-400">{activeIndex + 1} / {tabs.length}</span>
-                <button
-                  onClick={goNext}
-                  disabled={activeIndex === tabs.length - 1}
-                  className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                    activeIndex === tabs.length - 1
-                      ? "text-gray-300 cursor-not-allowed"
-                      : "text-emerald-600 hover:bg-emerald-50"
-                  }`}
-                >
-                  পরের
-                  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                  </svg>
-                </button>
-              </div>
             </div>
+
+            {/* Mobile arrow navigation */}
+            {activeIndex > 0 && (
+              <button
+                onClick={goPrev}
+                className="md:hidden absolute left-1 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-lg border border-gray-200 text-emerald-600 hover:bg-emerald-50 transition-all duration-300 z-10"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                </svg>
+              </button>
+            )}
+            {activeIndex < tabs.length - 1 && (
+              <button
+                onClick={goNext}
+                className="md:hidden absolute right-1 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-lg border border-gray-200 text-emerald-600 hover:bg-emerald-50 transition-all duration-300 z-10"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                </svg>
+              </button>
+            )}
           </div>
         </div>
       </div>
