@@ -69,7 +69,7 @@ const contentMap = {
     ),
   },
   'activity-2': {
-    image: '/QuranShikkha/sorbosadharon.jpeg',
+    image: '/QuranShikkha/sorbosadharon.jpg',
     content: (
       <div className="leading-relaxed text-gray-700 text-base md:text-lg space-y-4">
         <p>

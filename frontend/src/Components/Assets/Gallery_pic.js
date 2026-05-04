@@ -39,7 +39,7 @@ const gallery = [
 
     // কুরআন শিক্ষা
     { image: "/QuranShikkha/boyoshokoder_quran_shikkha.jpg", category: "কুরআন শিক্ষা" },
-    { image: "/QuranShikkha/sorbosadharon.jpeg", category: "কুরআন শিক্ষা" },
+    { image: "/QuranShikkha/sorbosadharon.jpg", category: "কুরআন শিক্ষা" },
 
     // শিশু কর্মসূচি
     { image: "/Childs/halakah3_prize_giving.jpeg", category: "শিশু কর্মসূচি" },
