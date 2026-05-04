@@ -106,6 +106,16 @@ const contentMap = {
 const AboutUs = () => {
   const [activeTab, setActiveTab] = useState("about-us-1");
 
+  const activeIndex = tabs.findIndex((t) => t.id === activeTab);
+
+  const goNext = () => {
+    if (activeIndex < tabs.length - 1) setActiveTab(tabs[activeIndex + 1].id);
+  };
+
+  const goPrev = () => {
+    if (activeIndex > 0) setActiveTab(tabs[activeIndex - 1].id);
+  };
+
   return (
     <section className="relative py-14 md:py-20 overflow-hidden">
       {/* Background decoration */}
@@ -165,6 +175,39 @@ const AboutUs = () => {
               <div className="w-16 h-0.5 bg-emerald-300 mb-6 rounded-full" />
 
               {contentMap[activeTab]}
+
+              {/* Mobile arrow navigation */}
+              <div className="flex md:hidden items-center justify-between mt-8 pt-4 border-t border-gray-100">
+                <button
+                  onClick={goPrev}
+                  disabled={activeIndex === 0}
+                  className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                    activeIndex === 0
+                      ? "text-gray-300 cursor-not-allowed"
+                      : "text-emerald-600 hover:bg-emerald-50"
+                  }`}
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                  আগের
+                </button>
+                <span className="text-xs text-gray-400">{activeIndex + 1} / {tabs.length}</span>
+                <button
+                  onClick={goNext}
+                  disabled={activeIndex === tabs.length - 1}
+                  className={`flex items-center gap-1.5 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                    activeIndex === tabs.length - 1
+                      ? "text-gray-300 cursor-not-allowed"
+                      : "text-emerald-600 hover:bg-emerald-50"
+                  }`}
+                >
+                  পরের
+                  <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>

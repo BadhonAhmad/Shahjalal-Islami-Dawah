@@ -15,9 +15,9 @@ const ImageSlider = () => {
   };
 
   const slides = [
-    { src: '/dawah/dawah to non muslim8 (2).jpeg', title: 'অমুসলিমদের মাঝে দাওয়াহ', subtitle: 'প্রজ্ঞার সাথে ইসলামের দাওয়াত পৌঁছে দেওয়া' },
-    { src: '/dawah/dawah to non muslim2.jpeg', title: 'অমুসলিমদের মাঝে দাওয়াহ', subtitle: 'সত্যের পথে আহ্বানের মহান কাজ' },
-    { src: '/dawah/dawah to non muslim5.jpeg', title: 'অমুসলিমদের মাঝে দাওয়াহ', subtitle: 'হিকমাহর সাথে ইসলামের দাওয়াত পৌঁছে দেওয়া' },
+    { src: '/dawah/dawah_to_non_muslim9.jpeg', title: 'অমুসলিমদের মাঝে দাওয়াহ', subtitle: 'প্রজ্ঞার সাথে ইসলামের দাওয়াত পৌঁছে দেওয়া' },
+    { src: '/dawah/dawah_to_non_muslim2.jpeg', title: 'অমুসলিমদের মাঝে দাওয়াহ', subtitle: 'সত্যের পথে আহ্বানের মহান কাজ' },
+    { src: '/dawah/dawah_to_non_muslim5.jpeg', title: 'অমুসলিমদের মাঝে দাওয়াহ', subtitle: 'হিকমাহর সাথে ইসলামের দাওয়াত পৌঁছে দেওয়া' },
     { src: '/halakah/halakah2.jpeg', title: 'ইলমের হালাকা', subtitle: 'মসজিদভিত্তিক নিয়মিত ইলমের মাহফিল' },
     { src: '/FoodDistribution/foods.jpeg', title: 'খাদ্য বিতরণ', subtitle: 'সুখে-দুঃখে নওমুসলিম ভাইদের পাশে' },
     { src: '/EidGift/EidGiftToNouMuslim.jpeg', title: 'নওমুসলিমদের ঈদের উপহার', subtitle: 'ঈদের আনন্দ সবার মাঝে ছড়িয়ে দেওয়া' },
