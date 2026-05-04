@@ -8,6 +8,7 @@ import Picture from "./Pages/Picture";
 import Video from "./Pages/Video";
 import Activities from "./Pages/Activities";
 import Membership from "./Pages/Membership";
+import ContactPage from "./Pages/Contact";
 import SuccessDonation from "./Components/DonationStatus/SuccessDonation.jsx";
 import FailedDonation from "./Components/DonationStatus/FailedDonation.jsx";
 
@@ -23,6 +24,7 @@ function App() {
           <Route path="/video" element={<Video />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/membership" element={<Membership />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/donation/success" element={<SuccessDonation />} />
           <Route path="/donation/fail" element={<FailedDonation />} />
         </Routes>

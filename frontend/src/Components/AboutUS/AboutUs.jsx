@@ -1,13 +1,46 @@
 import React, { useState } from "react";
 
 const tabs = [
-  { id: "about-us-1", label: "পরিচিতি", icon: "🕌" },
-  { id: "about-us-2", label: "লক্ষ্য ও উদ্দেশ্য", icon: "🎯" },
-  { id: "about-us-3", label: "কার্যক্রম", icon: "📋" },
-  { id: "about-us-4", label: "তহবিল ও আয়ের উৎস", icon: "💰" },
-  { id: "about-us-5", label: "ব্যয়ের নীতিমালা", icon: "📊" },
-  { id: "about-us-6", label: "অর্জনসমূহ", icon: "🏆" },
+  { id: "about-us-1", label: "পরিচিতি", icon: "info" },
+  { id: "about-us-2", label: "লক্ষ্য ও উদ্দেশ্য", icon: "target" },
+  { id: "about-us-3", label: "কার্যক্রম", icon: "activity" },
+  { id: "about-us-4", label: "তহবিল ও আয়ের উৎস", icon: "fund" },
+  { id: "about-us-5", label: "ব্যয়ের নীতিমালা", icon: "policy" },
+  { id: "about-us-6", label: "অর্জনসমূহ", icon: "award" },
 ];
+
+const iconMap = {
+  info: (
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  ),
+  target: (
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <circle cx="12" cy="12" r="10" /><circle cx="12" cy="12" r="6" /><circle cx="12" cy="12" r="2" />
+    </svg>
+  ),
+  activity: (
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+    </svg>
+  ),
+  fund: (
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  ),
+  policy: (
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    </svg>
+  ),
+  award: (
+    <svg xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <path strokeLinecap="round" strokeLinejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+    </svg>
+  ),
+};
 
 const contentMap = {
   "about-us-1": (
@@ -83,9 +116,6 @@ const AboutUs = () => {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section heading */}
         <div className="text-center mb-12">
-          <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-sm font-medium mb-4">
-            আমাদের সম্পর্কে জানুন
-          </span>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             আমাদের সম্পর্কে
           </h2>
@@ -94,7 +124,7 @@ const AboutUs = () => {
 
         <div className="flex flex-col md:flex-row bg-white rounded-3xl shadow-xl shadow-gray-200/60 overflow-hidden border border-gray-100/80">
           {/* Sidebar tabs */}
-          <div className="md:w-64 lg:w-72 bg-gradient-to-b from-gray-50 to-white md:border-r border-gray-100 p-4 md:p-0">
+          <div className="md:w-64 lg:w-72 bg-gradient-to-b from-gray-50 to-white md:border-r border-gray-100 p-4 md:pt-14 md:pb-4">
             <div className="flex md:flex-col overflow-x-auto md:overflow-x-visible gap-1.5 md:gap-0">
               {tabs.map((tab) => (
                 <button
@@ -106,7 +136,7 @@ const AboutUs = () => {
                       : "text-gray-500 hover:text-gray-800 hover:bg-gray-50"
                   }`}
                 >
-                  <span className="text-base">{tab.icon}</span>
+                  <span className="text-emerald-600">{iconMap[tab.icon]}</span>
                   <span>{tab.label}</span>
                   {/* Active left bar */}
                   {activeTab === tab.id && (
@@ -125,8 +155,8 @@ const AboutUs = () => {
             <div className="relative">
               {/* Active tab title */}
               <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <span className="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center text-sm">
-                  {tabs.find(t => t.id === activeTab)?.icon}
+                <span className="w-8 h-8 bg-emerald-100 rounded-lg flex items-center justify-center text-emerald-600">
+                  {iconMap[tabs.find(t => t.id === activeTab)?.icon]}
                 </span>
                 {tabs.find(t => t.id === activeTab)?.label}
               </h3>

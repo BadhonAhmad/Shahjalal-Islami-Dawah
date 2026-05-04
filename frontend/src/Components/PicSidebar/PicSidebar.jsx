@@ -3,7 +3,7 @@ import { DataContext } from "../../Context/DataContext";
 import "./PicSidebar.css";
 
 const PicSidebar = () => {
-  const [activeItem, setActiveItem] = useState("বৃক্ষরোপণ");
+  const [activeItem, setActiveItem] = useState("হালাকা");
   const { Gallery } = useContext(DataContext);
   const [uniqueCategories, setUniqueCategories] = useState([]);
   const filteredImages = Gallery.filter(item => item.category === activeItem).map(item => item.image);

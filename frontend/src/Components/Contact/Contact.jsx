@@ -101,7 +101,7 @@ const Contact = () => {
                 <div>
                   <p className="font-semibold text-gray-800 text-sm mb-1">যাতায়াতের নির্দেশনা</p>
                   <p className="text-gray-600 text-sm">১) টিলাগড় পয়েন্ট থেকে সিএনজি যোগে বালুচর পয়েন্টে এসে, সেখান থেকে অটোরিকশায় ১০ টাকায় নতুনবাজারের ১০০ গজ পূর্বে লিপু মার্কেটের ডানের গলি দিয়ে সেকান্দর মহলের নিচতলায়।</p>
-                  <p className="text-gray-600 text-sm mt-1">২) সিলেট কৃষি বিশ্ববিদ্যালয়ের সেকেন্ড গেইট দিয়ে প্রবেশ করে শেখ সফিক উদ্দীন মসজিদ অতিক্রম করে বাম পাশের গলি দিয়ে সেকান্দর মহলের নিচতলায়।</p>
+                  <p className="text-gray-600 text-sm mt-1">২) সিলেট কৃষি বিশ্ববিদ্যালয়ের সেকেন্ড গেইট দিয়ে বের হয়ে শেখ সফিক উদ্দীন মসজিদ অতিক্রম করে বাম পাশের গলি দিয়ে সেকান্দর মহলের নিচতলায়।</p>
                 </div>
 
                 <div>
@@ -110,6 +110,30 @@ const Contact = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        {/* Map */}
+        <div className="mt-10 rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+          <iframe
+            title="লোকেশন ম্যাপ"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d500!2d91.8983769!3d24.9083835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1&z=17"
+            width="100%"
+            height="400"
+            style={{ border: 0 }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+          <div className="text-center mt-4">
+            <a
+              href="https://www.google.com/maps?q=24.9083835,91.8983769&z=17&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+            >
+              বড় ম্যাপে দেখুন
+            </a>
           </div>
         </div>
       </div>

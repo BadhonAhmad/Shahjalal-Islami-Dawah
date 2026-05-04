@@ -28,12 +28,6 @@ const Navbar = () => {
     scrollToElement("donate-section");
   };
 
-  const handleContactClick = () => {
-    setIsNavbarVisible(false);
-    navigate("/", { replace: false });
-    scrollToElement("contact-page");
-  };
-
   const handleMenuItemClick = (menuItem) => {
     setActiveMenuItem(menuItem);
     setIsNavbarVisible(false);
@@ -64,7 +58,7 @@ const Navbar = () => {
     { key: "activities", label: "আমাদের কার্যক্রম", to: "/activities" },
     { key: "membership", label: "সদস্য হন", to: "/membership" },
     { key: "gellary", label: "গ্যালারি", to: "/gallery" },
-    { key: "video", label: "ভিডিও", to: "/video" },
+    { key: "jogajog", label: "যোগাযোগ", to: "/contact" },
   ];
 
   return (
@@ -152,36 +146,6 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
-              <li>
-                <button
-                  onClick={handleContactClick}
-                  className="relative px-5 py-3 rounded-lg text-sm font-medium transition-all duration-300 inline-block group"
-                >
-                  <span
-                    className={`relative z-10 transition-colors duration-300 ${
-                      activeMenuItem === "jogajog"
-                        ? "text-white"
-                        : "text-emerald-300/80 group-hover:text-white"
-                    }`}
-                  >
-                    যোগাযোগ
-                  </span>
-                  <span
-                    className={`absolute inset-0 rounded-lg transition-all duration-300 ${
-                      activeMenuItem === "jogajog"
-                        ? "bg-white/15 scale-100"
-                        : "bg-white/0 scale-95 group-hover:bg-white/10 group-hover:scale-100"
-                    }`}
-                  />
-                  <span
-                    className={`absolute bottom-0.5 left-1/2 -translate-x-1/2 h-[2px] rounded-full transition-all duration-300 ${
-                      activeMenuItem === "jogajog"
-                        ? "w-6 bg-amber-400"
-                        : "w-0 bg-amber-400 group-hover:w-4"
-                    }`}
-                  />
-                </button>
-              </li>
             </ul>
           </div>
         </div>
@@ -240,32 +204,6 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
-              <li>
-                <button
-                  className={`relative flex items-center gap-3 px-4 py-3.5 rounded-xl text-base font-medium transition-all duration-300 overflow-hidden group ${
-                    activeMenuItem === "jogajog"
-                      ? "text-white"
-                      : "text-emerald-200 hover:text-white"
-                  }`}
-                  onClick={handleContactClick}
-                >
-                  <span
-                    className={`absolute inset-0 rounded-xl transition-all duration-300 ${
-                      activeMenuItem === "jogajog"
-                        ? "bg-white/15"
-                        : "bg-transparent group-hover:bg-white/8"
-                    }`}
-                  />
-                  <span
-                    className={`absolute left-0 top-2 bottom-2 w-[3px] rounded-full transition-all duration-300 ${
-                      activeMenuItem === "jogajog"
-                        ? "bg-amber-400"
-                        : "bg-transparent group-hover:bg-emerald-400"
-                    }`}
-                  />
-                  <span className="relative z-10">যোগাযোগ</span>
-                </button>
-              </li>
             </ul>
 
             {/* Mobile donate button */}
