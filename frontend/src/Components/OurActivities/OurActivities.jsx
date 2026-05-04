@@ -56,7 +56,7 @@ const iconMap = {
 
 const contentMap = {
   'activity-1': {
-    image: '/banner/center banner.jpeg',
+    image: '/banner/center_banner.jpeg',
     content: (
       <div className="leading-relaxed text-gray-700 text-base md:text-lg space-y-4">
         <p>
@@ -69,7 +69,7 @@ const contentMap = {
     ),
   },
   'activity-2': {
-    image: '/quranshikkha/sorbosadharon.webp',
+    image: '/quranshikkha/sorbosadharon.jpeg',
     content: (
       <div className="leading-relaxed text-gray-700 text-base md:text-lg space-y-4">
         <p>
@@ -82,7 +82,7 @@ const contentMap = {
     ),
   },
   'activity-3': {
-    image: '/quranshikkha/boyoshokoder quran shikkha.jpg',
+    image: '/quranshikkha/boyoshokoder_quran_shikkha.jpg',
     content: (
       <div className="leading-relaxed text-gray-700 text-base md:text-lg space-y-4">
         <p>
@@ -95,7 +95,7 @@ const contentMap = {
     ),
   },
   'activity-4': {
-    image: '/dawah/dawah to non muslim8 (2).jpeg',
+    image: '/dawah/dawah_to_non_muslim9.jpeg',
     content: (
       <div className="leading-relaxed text-gray-700 text-base md:text-lg space-y-4">
         <p>
@@ -150,7 +150,7 @@ const contentMap = {
     ),
   },
   'activity-8': {
-    image: '/childs/halakah3 prize giving.jpeg',
+    image: '/childs/halakah3_prize_giving.jpeg',
     content: (
       <div className="leading-relaxed text-gray-700 text-base md:text-lg space-y-4">
         <p>
