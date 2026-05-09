@@ -192,7 +192,7 @@ const OurActivities = () => {
           <div className="mt-4 mx-auto w-24 h-1 bg-gradient-to-r from-teal-500 to-teal-400 rounded-full" />
         </div>
 
-        <div className="flex flex-col md:flex-row bg-white rounded-3xl shadow-xl shadow-gray-200/60 overflow-hidden border border-gray-100/80">
+        <div className="flex flex-col md:flex-row bg-white rounded-3xl shadow-xl shadow-gray-200/60 md:overflow-hidden border border-gray-100/80">
           {/* Sidebar tabs */}
           <div className="md:w-64 lg:w-72 bg-gradient-to-b from-teal-50/50 to-white md:border-r border-teal-100/50 p-4 md:pt-14 md:pb-4">
             <div className="flex md:flex-col overflow-x-auto md:overflow-x-visible gap-1.5 md:gap-0 snap-x snap-mandatory overscroll-x-contain">
