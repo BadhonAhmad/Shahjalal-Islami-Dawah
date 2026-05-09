@@ -195,12 +195,12 @@ const OurActivities = () => {
         <div className="flex flex-col md:flex-row bg-white rounded-3xl shadow-xl shadow-gray-200/60 overflow-hidden border border-gray-100/80">
           {/* Sidebar tabs */}
           <div className="md:w-64 lg:w-72 bg-gradient-to-b from-teal-50/50 to-white md:border-r border-teal-100/50 p-4 md:pt-14 md:pb-4">
-            <div className="flex md:flex-col overflow-x-auto md:overflow-x-visible gap-1.5 md:gap-0">
+            <div className="flex md:flex-col overflow-x-auto md:overflow-x-visible gap-1.5 md:gap-0 snap-x snap-mandatory overscroll-x-contain">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => setActiveTab(tab.id)}
-                  className={`flex items-center gap-3 px-4 py-3.5 text-sm md:text-base font-medium whitespace-nowrap transition-all duration-300 rounded-xl md:rounded-none md:rounded-r-xl relative ${
+                  className={`snap-start flex items-center gap-3 px-4 py-3.5 text-sm md:text-base font-medium whitespace-nowrap transition-all duration-300 rounded-xl md:rounded-none md:rounded-r-xl relative ${
                     activeTab === tab.id
                       ? 'bg-teal-50 text-teal-700 shadow-sm md:shadow-none'
                       : 'text-gray-500 hover:text-gray-800 hover:bg-gray-50'
