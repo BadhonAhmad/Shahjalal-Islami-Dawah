@@ -235,7 +235,7 @@ const OurActivities = () => {
                   <img
                     src={activeContent.image}
                     alt={tabs.find(t => t.id === activeTab)?.label}
-                    className="w-full h-56 md:h-72 lg:h-80 object-cover rounded-2xl shadow-md"
+                    className="w-full h-56 md:h-72 lg:h-80 object-cover object-top rounded-2xl shadow-md"
                   />
                 </div>
                 <div className="lg:w-1/2">
