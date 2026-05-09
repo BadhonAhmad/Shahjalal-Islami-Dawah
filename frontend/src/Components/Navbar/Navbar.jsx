@@ -69,7 +69,7 @@ const Navbar = () => {
           onClick={() => setIsNavbarVisible(false)}
         />
       )}
-      <nav className="sticky top-0 z-50 bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-900 shadow-lg overflow-visible">
+      <nav className="sticky top-0 z-50 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 shadow-lg overflow-visible">
         {/* Subtle top accent line */}
         <div className="h-[2px] bg-gradient-to-r from-transparent via-amber-400 to-transparent" />
 
@@ -84,7 +84,7 @@ const Navbar = () => {
                 <p className="text-xl md:text-2xl font-bold text-white leading-tight tracking-wide">
                   শাহজালাল (রহ.) ইসলামী দাওয়াহ সেন্টার
                 </p>
-                <p className="text-xs md:text-sm text-emerald-300/80 font-medium">
+                <p className="text-xs md:text-sm text-teal-300/80 font-medium">
                   সিলেট বিভাগীয় নওমুসলিম মারকায
                 </p>
               </div>
@@ -122,7 +122,7 @@ const Navbar = () => {
                       className={`relative z-10 transition-colors duration-300 ${
                         activeMenuItem === item.key
                           ? "text-white"
-                          : "text-emerald-300/80 group-hover:text-white"
+                          : "text-teal-300/80 group-hover:text-white"
                       }`}
                     >
                       {item.label}
@@ -153,7 +153,7 @@ const Navbar = () => {
         {/* Mobile drawer */}
         <div
           ref={navbarRef}
-          className={`fixed top-0 left-0 h-full w-80 bg-gradient-to-b from-emerald-900 via-emerald-900 to-emerald-950 shadow-2xl z-50 transform transition-all duration-300 ease-in-out md:hidden ${
+          className={`fixed top-0 left-0 h-full w-80 bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 shadow-2xl z-50 transform transition-all duration-300 ease-in-out md:hidden ${
             isNavbarVisible ? "translate-x-0" : "-translate-x-full"
           }`}
         >
@@ -168,7 +168,7 @@ const Navbar = () => {
               </div>
               <div>
                 <p className="font-bold text-white text-lg">শাহজালাল (রহ.) ইসলামী দাওয়াহ সেন্টার</p>
-                <p className="text-xs text-emerald-400/70">সিলেট বিভাগীয় নওমুসলিম মারকায</p>
+                <p className="text-xs text-teal-400/70">সিলেট বিভাগীয় নওমুসলিম মারকায</p>
               </div>
             </div>
 
@@ -180,7 +180,7 @@ const Navbar = () => {
                     className={`relative flex items-center gap-3 px-4 py-3.5 rounded-xl text-base font-medium transition-all duration-300 overflow-hidden group ${
                       activeMenuItem === item.key
                         ? "text-white"
-                        : "text-emerald-200 hover:text-white"
+                        : "text-teal-200 hover:text-white"
                     }`}
                     onClick={() => handleMenuItemClick(item.key)}
                   >
@@ -197,7 +197,7 @@ const Navbar = () => {
                       className={`absolute left-0 top-2 bottom-2 w-[3px] rounded-full transition-all duration-300 ${
                         activeMenuItem === item.key
                           ? "bg-amber-400"
-                          : "bg-transparent group-hover:bg-emerald-400"
+                          : "bg-transparent group-hover:bg-teal-400"
                       }`}
                     />
                     <span className="relative z-10">{item.label}</span>

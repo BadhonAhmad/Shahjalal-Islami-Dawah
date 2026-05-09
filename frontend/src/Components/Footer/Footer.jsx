@@ -10,11 +10,11 @@ const Footer = () => {
               Copyright &copy; 2024 <span className="text-white font-semibold">শাহজালাল (রহ.) ইসলামী দাওয়াহ সেন্টার</span> - all rights reserved.
             </p>
             <div className="flex items-center justify-center gap-2 text-sm">
-              <a href="/terms-and-conditions" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+              <a href="/terms-and-conditions" className="text-teal-400 hover:text-teal-300 transition-colors">
                 Terms and conditions
               </a>
               <span className="text-gray-600">|</span>
-              <a href="/privacy-policy" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+              <a href="/privacy-policy" className="text-teal-400 hover:text-teal-300 transition-colors">
                 Privacy Policy
               </a>
             </div>

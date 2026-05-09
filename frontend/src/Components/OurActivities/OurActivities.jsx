@@ -180,21 +180,21 @@ const OurActivities = () => {
 
   return (
     <section className="relative py-14 md:py-20 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-indigo-50/30 to-white" />
-      <div className="absolute top-20 left-0 w-72 h-72 bg-indigo-100/30 rounded-full blur-3xl" />
-      <div className="absolute bottom-0 right-0 w-72 h-72 bg-violet-100/30 rounded-full blur-3xl" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-teal-50/30 to-white" />
+      <div className="absolute top-20 left-0 w-72 h-72 bg-teal-100/30 rounded-full blur-3xl" />
+      <div className="absolute bottom-0 right-0 w-72 h-72 bg-teal-100/30 rounded-full blur-3xl" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
             আমাদের কার্যক্রম
           </h2>
-          <div className="mt-4 mx-auto w-24 h-1 bg-gradient-to-r from-indigo-500 to-violet-400 rounded-full" />
+          <div className="mt-4 mx-auto w-24 h-1 bg-gradient-to-r from-teal-500 to-teal-400 rounded-full" />
         </div>
 
         <div className="flex flex-col md:flex-row bg-white rounded-3xl shadow-xl shadow-gray-200/60 overflow-hidden border border-gray-100/80">
           {/* Sidebar tabs */}
-          <div className="md:w-64 lg:w-72 bg-gradient-to-b from-indigo-50/50 to-white md:border-r border-indigo-100/50 p-4 md:pt-14 md:pb-4">
+          <div className="md:w-64 lg:w-72 bg-gradient-to-b from-teal-50/50 to-white md:border-r border-teal-100/50 p-4 md:pt-14 md:pb-4">
             <div className="flex md:flex-col overflow-x-auto md:overflow-x-visible gap-1.5 md:gap-0">
               {tabs.map((tab) => (
                 <button
@@ -202,14 +202,14 @@ const OurActivities = () => {
                   onClick={() => setActiveTab(tab.id)}
                   className={`flex items-center gap-3 px-4 py-3.5 text-sm md:text-base font-medium whitespace-nowrap transition-all duration-300 rounded-xl md:rounded-none md:rounded-r-xl relative ${
                     activeTab === tab.id
-                      ? 'bg-indigo-50 text-indigo-700 shadow-sm md:shadow-none'
+                      ? 'bg-teal-50 text-teal-700 shadow-sm md:shadow-none'
                       : 'text-gray-500 hover:text-gray-800 hover:bg-gray-50'
                   }`}
                 >
-                  <span className="text-indigo-600">{iconMap[tab.icon]}</span>
+                  <span className="text-teal-600">{iconMap[tab.icon]}</span>
                   <span>{tab.label}</span>
                   {activeTab === tab.id && (
-                    <span className="hidden md:block absolute left-0 top-3 bottom-3 w-[3px] bg-indigo-500 rounded-r-full" />
+                    <span className="hidden md:block absolute left-0 top-3 bottom-3 w-[3px] bg-teal-500 rounded-r-full" />
                   )}
                 </button>
               ))}
@@ -218,17 +218,17 @@ const OurActivities = () => {
 
           {/* Content area with image */}
           <div className="flex-1 p-6 md:p-10 min-h-[400px] relative">
-            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-indigo-50 to-transparent rounded-bl-3xl pointer-events-none" />
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-teal-50 to-transparent rounded-bl-3xl pointer-events-none" />
 
             <div className="relative">
               <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-                <span className="w-8 h-8 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600">
+                <span className="w-8 h-8 bg-teal-100 rounded-lg flex items-center justify-center text-teal-600">
                   {iconMap[tabs.find(t => t.id === activeTab)?.icon]}
                 </span>
                 {tabs.find(t => t.id === activeTab)?.label}
               </h3>
 
-              <div className="w-16 h-0.5 bg-indigo-300 mb-6 rounded-full" />
+              <div className="w-16 h-0.5 bg-teal-300 mb-6 rounded-full" />
 
               <div className="flex flex-col lg:flex-row gap-6">
                 <div className="lg:w-1/2 flex-shrink-0">
@@ -248,7 +248,7 @@ const OurActivities = () => {
             {activeIndex > 0 && (
               <button
                 onClick={goPrev}
-                className="md:hidden absolute left-1 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-lg border border-gray-200 text-indigo-600 hover:bg-indigo-50 transition-all duration-300 z-10"
+                className="md:hidden absolute left-1 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-lg border border-gray-200 text-teal-600 hover:bg-teal-50 transition-all duration-300 z-10"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -258,7 +258,7 @@ const OurActivities = () => {
             {activeIndex < tabs.length - 1 && (
               <button
                 onClick={goNext}
-                className="md:hidden absolute right-1 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-lg border border-gray-200 text-indigo-600 hover:bg-indigo-50 transition-all duration-300 z-10"
+                className="md:hidden absolute right-1 top-1/2 -translate-y-1/2 w-9 h-9 flex items-center justify-center rounded-full bg-white shadow-lg border border-gray-200 text-teal-600 hover:bg-teal-50 transition-all duration-300 z-10"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                   <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />

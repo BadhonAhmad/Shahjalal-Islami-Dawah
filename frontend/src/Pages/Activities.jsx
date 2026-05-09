@@ -107,8 +107,8 @@ const Activities = () => {
             className="snap-start h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8"
             style={{
               background: index % 2 === 0
-                ? "linear-gradient(135deg, #f0fdf4 0%, #ffffff 50%, #ecfdf5 100%)"
-                : "linear-gradient(135deg, #eef2ff 0%, #ffffff 50%, #f0f9ff 100%)",
+                ? "linear-gradient(135deg, #f0fdfa 0%, #ffffff 50%, #ccfbf1 100%)"
+                : "linear-gradient(135deg, #f0fdfa 0%, #ffffff 50%, #ccfbf1 100%)",
             }}
           >
             <div className="w-full max-w-5xl flex flex-col md:flex-row items-center gap-8 md:gap-12">
@@ -125,7 +125,7 @@ const Activities = () => {
 
               {/* Text */}
               <div className={`w-full md:w-1/2 text-center md:text-left ${index % 2 !== 0 ? "md:order-1 md:text-right" : ""}`}>
-                <span className="inline-block px-4 py-1.5 bg-emerald-100 text-emerald-700 rounded-full text-sm font-bold mb-4">
+                <span className="inline-block px-4 py-1.5 bg-teal-100 text-teal-700 rounded-full text-sm font-bold mb-4">
                   {milestone.year}
                 </span>
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-800 mb-4 leading-tight">
@@ -148,7 +148,7 @@ const Activities = () => {
             onClick={() => scrollTo(index)}
             className={`w-3 h-3 rounded-full transition-all duration-300 ${
               activeIndex === index
-                ? "bg-emerald-600 scale-125 shadow-lg shadow-emerald-300"
+                ? "bg-teal-600 scale-125 shadow-lg shadow-teal-300"
                 : "bg-gray-300 hover:bg-gray-400"
             }`}
             title={milestones[index]?.title}
@@ -160,7 +160,7 @@ const Activities = () => {
       {activeIndex > 0 && (
         <button
           onClick={() => scrollTo(activeIndex - 1)}
-          className="fixed top-4 left-1/2 -translate-x-1/2 z-50 animate-bounce text-white bg-emerald-600/70 hover:bg-emerald-600 rounded-full p-2 shadow-lg transition-all duration-300"
+          className="fixed top-4 left-1/2 -translate-x-1/2 z-50 animate-bounce text-white bg-teal-600/70 hover:bg-teal-600 rounded-full p-2 shadow-lg transition-all duration-300"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 15l7-7 7 7" />
@@ -170,7 +170,7 @@ const Activities = () => {
       {activeIndex < milestones.length - 1 && (
         <button
           onClick={() => scrollTo(activeIndex + 1)}
-          className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 animate-bounce text-white bg-emerald-600/70 hover:bg-emerald-600 rounded-full p-2 shadow-lg transition-all duration-300"
+          className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 animate-bounce text-white bg-teal-600/70 hover:bg-teal-600 rounded-full p-2 shadow-lg transition-all duration-300"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />

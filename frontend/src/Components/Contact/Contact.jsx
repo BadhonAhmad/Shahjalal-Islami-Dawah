@@ -24,7 +24,7 @@ const Contact = () => {
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 inline-block relative">
             যোগাযোগ
-            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 -mb-2 w-20 h-1 bg-emerald-500 rounded-full" />
+            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 -mb-2 w-20 h-1 bg-teal-500 rounded-full" />
           </h2>
         </div>
 
@@ -32,7 +32,7 @@ const Contact = () => {
           {/* Email contact card */}
           <div className="bg-white rounded-2xl shadow-lg p-6 md:p-8 border border-gray-100 flex flex-col justify-center">
             <div className="text-center space-y-5">
-              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto">
+              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto">
                 <img src={icon_gmail} alt="Email" className="w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-800">ইমেইলে যোগাযোগ করুন</h3>
@@ -41,7 +41,7 @@ const Contact = () => {
               </p>
               <a
                 href="mailto:tupayelahamad811@gmail.com"
-                className="inline-block px-8 py-3 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                className="inline-block px-8 py-3 bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-500 hover:to-teal-600 text-white rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
               >
                 ইমেইল করুন
               </a>
@@ -130,7 +130,7 @@ const Contact = () => {
               href="https://www.google.com/maps?q=24.9083835,91.8983769&z=17&hl=en"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block px-6 py-2.5 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+              className="inline-block px-6 py-2.5 bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-500 hover:to-teal-600 text-white rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
             >
               বড় ম্যাপে দেখুন
             </a>

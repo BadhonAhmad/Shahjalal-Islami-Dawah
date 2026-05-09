@@ -37,7 +37,7 @@ const Home = () => {
               href="https://www.google.com/maps?q=24.9083835,91.8983769&z=17&hl=en"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors text-sm"
+              className="inline-flex items-center gap-2 text-teal-400 hover:text-teal-300 transition-colors text-sm"
             >
               <span>বড় করে দেখুন</span>
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

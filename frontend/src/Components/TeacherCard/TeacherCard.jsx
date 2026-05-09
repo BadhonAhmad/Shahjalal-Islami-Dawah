@@ -12,7 +12,7 @@ export const TeacherCard = ({ imgSrc, name, description }) => {
           />
         </div>
         <div className="p-4 text-center">
-          <h3 className="text-lg font-bold text-emerald-800 mb-1">{name}</h3>
+          <h3 className="text-lg font-bold text-teal-800 mb-1">{name}</h3>
           <p className="text-sm text-gray-600">{description}</p>
         </div>
       </div>

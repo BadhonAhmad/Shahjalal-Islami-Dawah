@@ -85,7 +85,7 @@
   }
   .donation-form-container button[type="submit"] {
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: #0d9488;
     color: rgb(0, 0, 0);
     border: none;
     border-radius: 5px;
@@ -95,7 +95,7 @@
   }
   
   .donation-form-container button[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #0f766e;
   }
   
   .donation-form-container a {
@@ -119,7 +119,7 @@
   .quote-section .quote-text {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #218838;
+    color: #0f766e;
     text-align: justify;
     line-height: 1.5;
   }
@@ -143,7 +143,7 @@
   .additional-info-section .quote-text {
     font-size: 1.1rem;
     font-weight: bold;
-    color: #218838;
+    color: #0f766e;
   }
 
   .section-selection{

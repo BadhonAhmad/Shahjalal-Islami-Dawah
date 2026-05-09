@@ -63,7 +63,7 @@ const DaoaCourseTab = () => {
                   sx={{
                     fontWeight: "bold",
                     fontSize: "1.5em",
-                    color: "blueviolet",
+                    color: "#0d9488",
                   }}
                   label="১ম"
                   value="1"
@@ -72,7 +72,7 @@ const DaoaCourseTab = () => {
                   sx={{
                     fontWeight: "bold",
                     fontSize: "1.5em",
-                    color: "blueviolet",
+                    color: "#0d9488",
                   }}
                   label="২য় ও ৩য়"
                   value="2"
@@ -81,7 +81,7 @@ const DaoaCourseTab = () => {
                   sx={{
                     fontWeight: "bold",
                     fontSize: "1.5em",
-                    color: "blueviolet",
+                    color: "#0d9488",
                   }}
                   label="৪র্থ"
                   value="3"

@@ -54,7 +54,7 @@ const TeacherAnm = () => {
         <div className="text-center mb-10">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-800 inline-block relative">
             শিক্ষক মণ্ডলী
-            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 -mb-2 w-20 h-1 bg-emerald-500 rounded-full" />
+            <span className="absolute bottom-0 left-1/2 -translate-x-1/2 -mb-2 w-20 h-1 bg-teal-500 rounded-full" />
           </h2>
         </div>
 

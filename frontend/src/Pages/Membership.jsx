@@ -6,7 +6,7 @@ const Membership = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="bg-white rounded-3xl shadow-xl shadow-gray-200/60 overflow-hidden border border-gray-100/80">
           {/* Top banner */}
-          <div className="relative bg-gradient-to-r from-emerald-800 via-emerald-700 to-emerald-800 px-8 py-8 text-center overflow-hidden">
+          <div className="relative bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 px-8 py-8 text-center overflow-hidden">
             <div className="absolute inset-0 opacity-10">
               <div
                 className="w-full h-full"
@@ -19,7 +19,7 @@ const Membership = () => {
               <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">
                 সদস্য হন
               </h1>
-              <p className="text-emerald-200 text-sm md:text-base">
+              <p className="text-teal-200 text-sm md:text-base">
                 দাওয়াতী কার্যক্রম সুষ্ঠুভাবে সম্পাদন করতে মাসিক অথবা বাৎসরিক সহযোগী সদস্য হোন
               </p>
             </div>
@@ -28,11 +28,11 @@ const Membership = () => {
           {/* Content */}
           <div className="p-6 md:p-10 space-y-6">
             {/* Ayah reference */}
-            <div className="bg-emerald-50 rounded-2xl p-5 border border-emerald-100">
-              <p className="text-center text-base md:text-lg text-emerald-800 font-semibold leading-relaxed">
+            <div className="bg-teal-50 rounded-2xl p-5 border border-teal-100">
+              <p className="text-center text-base md:text-lg text-teal-800 font-semibold leading-relaxed">
                 &laquo; তোমাদের মধ্যে এমন একটি দল থাকা উচিত যারা কল্যাণের দিকে ডাকবে এবং নেক কাজের আদেশ দেবে ও খারাপ কাজ থেকে বারণ করবে। আর তারাই সফলকাম। &raquo;
               </p>
-              <p className="text-center text-sm text-emerald-600 mt-2">
+              <p className="text-center text-sm text-teal-600 mt-2">
                 — সূরা আলে ইমরান: ১০৪
               </p>
             </div>
@@ -49,7 +49,7 @@ const Membership = () => {
                 href="https://forms.gle/ffubEE29Mx3ag6n9A"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block px-10 py-4 bg-gradient-to-r from-emerald-600 to-emerald-700 hover:from-emerald-500 hover:to-emerald-600 text-white text-lg font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
+                className="inline-block px-10 py-4 bg-gradient-to-r from-teal-600 to-teal-700 hover:from-teal-500 hover:to-teal-600 text-white text-lg font-bold rounded-full transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1"
               >
                 ফর্ম পূরণ করুন
               </a>

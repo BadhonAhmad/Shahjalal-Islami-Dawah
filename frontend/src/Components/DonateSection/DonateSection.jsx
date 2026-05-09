@@ -15,7 +15,7 @@ const DonateSection = () => {
     <>
       <section id="donate-section" className="relative py-16 md:py-24 overflow-hidden">
         {/* Background pattern */}
-        <div className="absolute inset-0 bg-gradient-to-br from-emerald-800 via-emerald-900 to-emerald-950" />
+        <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950" />
         <div
           className="absolute inset-0 opacity-5"
           style={{
@@ -41,16 +41,16 @@ const DonateSection = () => {
 
           {/* Motivational text */}
           <div className="max-w-3xl mx-auto space-y-4 mb-10">
-            <p className="text-emerald-100 text-base md:text-lg leading-relaxed">
+            <p className="text-teal-100 text-base md:text-lg leading-relaxed">
               &laquo; যে ব্যক্তি আল্লাহর রাস্তায় একটি ছোট দানও করবে, আল্লাহ তা তার জন্য বহুগুণ বৃদ্ধি করবেন। &raquo;
             </p>
-            <p className="text-emerald-200/90 text-base md:text-lg leading-relaxed">
+            <p className="text-teal-200/90 text-base md:text-lg leading-relaxed">
               চিরস্থায়ী জাহান্নামগামী মানুষদের সত্যের পথ দেখানোর জন্য, ইসলামের আলো প্রতিটি ঘরে পৌঁছে দেওয়ার জন্য, গরিব-দুঃখী ও অসহায় মানুষের পাশে দাঁড়ানোর জন্য আপনার অণুতীৎ দানও হতে পারে অনেক বড় সাওয়াব।
             </p>
-            <p className="text-emerald-200/90 text-base md:text-lg leading-relaxed">
+            <p className="text-teal-200/90 text-base md:text-lg leading-relaxed">
               আল্লাহ তায়ালা বলেন &mdash; <span className="text-amber-200 font-medium">&laquo; তোমরা আল্লাহকে ঋণ দাও, উত্তম ঋণ। আল্লাহ তোমাদের জন্য তা বহুগুণ বাড়িয়ে দেবেন এবং তিনি তোমাদের ক্ষমা করবেন। &raquo;</span> <span className="text-white/60">(সূরা আল-হাদীদ: ১১)</span>
             </p>
-            <p className="text-emerald-100 text-base md:text-lg leading-relaxed">
+            <p className="text-teal-100 text-base md:text-lg leading-relaxed">
               আপনার দানের মাধ্যমে একটি পরিবার শিক্ষার আলো পেতে পারে, একটি শিশু কুরআন শিখতে পারে, একজন পথহারা মানুষ সিরাতুল মুস্তাকীম খুঁজে পেতে পারে।
             </p>
           </div>
@@ -64,7 +64,7 @@ const DonateSection = () => {
           </button>
 
           {/* Trust note */}
-          <p className="mt-6 text-emerald-300/70 text-sm">
+          <p className="mt-6 text-teal-300/70 text-sm">
             আপনার প্রতিটি দান সরাসরি শিক্ষা ও দাওয়াহ কার্যক্রমে ব্যয় হবে &mdash; আল্লাহই সর্বশ্রেষ্ঠ হিসাব গ্রহণকারী।
           </p>
         </div>
@@ -90,7 +90,7 @@ const DonateSection = () => {
 
             {/* Header */}
             <div className="text-center mb-6">
-              <div className="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <span className="text-3xl">&#10084;</span>
               </div>
               <h3 className="text-2xl font-bold text-gray-800">দান করুন</h3>
@@ -98,7 +98,7 @@ const DonateSection = () => {
             </div>
 
             {/* Payment info */}
-            <div className="bg-gradient-to-br from-emerald-50 to-gray-50 rounded-2xl p-6 border border-emerald-200">
+            <div className="bg-gradient-to-br from-teal-50 to-gray-50 rounded-2xl p-6 border border-teal-200">
               {/* Payment methods */}
               <div className="flex items-center justify-center gap-3 mb-5">
                 <div className="w-8 h-8 bg-pink-500 rounded-lg flex items-center justify-center">
@@ -116,11 +116,11 @@ const DonateSection = () => {
               <p className="text-center text-sm text-gray-500 mb-3">বিকাশ / নগদ / রকেট</p>
 
               {/* Number */}
-              <div className="bg-white rounded-xl py-4 px-5 border-2 border-dashed border-emerald-300 flex items-center justify-between">
+              <div className="bg-white rounded-xl py-4 px-5 border-2 border-dashed border-teal-300 flex items-center justify-between">
                 <p className="text-2xl font-bold text-gray-800 tracking-wider font-mono">01626947430</p>
                 <button
                   onClick={() => handleCopy("01626947430")}
-                  className="px-4 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-medium rounded-lg transition-all duration-200 shrink-0"
+                  className="px-4 py-1.5 bg-teal-600 hover:bg-teal-700 text-white text-sm font-medium rounded-lg transition-all duration-200 shrink-0"
                 >
                   {copied ? "Copied!" : "Copy"}
                 </button>
