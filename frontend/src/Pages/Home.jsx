@@ -18,7 +18,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
           <div className="text-center mb-6">
             <h3 className="text-2xl font-bold text-white mb-2">ঠিকানা</h3>
-            <p className="text-gray-400">শাহজালাল ইসলামী দাওয়াহ সেন্টার, সিলেট</p>
+            <p className="text-gray-400">শাহজালাল (রহ.) ইসলামী দাওয়াহ সেন্টার, সিলেট</p>
           </div>
           <div className="rounded-2xl overflow-hidden shadow-lg border border-gray-700/50">
             <iframe

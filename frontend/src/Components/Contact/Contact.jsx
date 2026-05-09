@@ -93,7 +93,7 @@ const Contact = () => {
               <div className="space-y-5">
                 <div>
                   <p className="font-semibold text-gray-800 text-sm mb-1">ঠিকানা</p>
-                  <p className="text-gray-600 text-sm">শাহজালাল ইসলামী দাওয়াহ সেন্টার</p>
+                  <p className="text-gray-600 text-sm">শাহজালাল (রহ.) ইসলামী দাওয়াহ সেন্টার</p>
                   <p className="text-gray-600 text-sm">সিলেট বিভাগীয় নওমুসলিম মারকায</p>
                   <p className="text-gray-600 text-sm">বালুচর, নয়াবাজার, সিকান্দারমহল, সিলেট</p>
                 </div>

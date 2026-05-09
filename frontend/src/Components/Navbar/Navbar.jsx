@@ -82,7 +82,7 @@ const Navbar = () => {
               </div>
               <div>
                 <p className="text-xl md:text-2xl font-bold text-white leading-tight tracking-wide">
-                  শাহজালাল ইসলামী দাওয়াহ সেন্টার
+                  শাহজালাল (রহ.) ইসলামী দাওয়াহ সেন্টার
                 </p>
                 <p className="text-xs md:text-sm text-emerald-300/80 font-medium">
                   সিলেট বিভাগীয় নওমুসলিম মারকায
@@ -167,7 +167,7 @@ const Navbar = () => {
                 <img src={logo} alt="Logo" className="relative h-16 w-16 rounded-lg object-contain" />
               </div>
               <div>
-                <p className="font-bold text-white text-lg">শাহজালাল ইসলামী দাওয়াহ সেন্টার</p>
+                <p className="font-bold text-white text-lg">শাহজালাল (রহ.) ইসলামী দাওয়াহ সেন্টার</p>
                 <p className="text-xs text-emerald-400/70">সিলেট বিভাগীয় নওমুসলিম মারকায</p>
               </div>
             </div>

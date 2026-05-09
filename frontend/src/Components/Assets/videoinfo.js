@@ -67,7 +67,7 @@ const videoinfo = [
 const videoinfo = [
     {
         videoLink: "https://www.youtube.com/embed/8_ACB_MY4-s",
-        description: "শাহজালাল ইসলামী দাওয়াহ সেন্টার পরিচিতি ভিডিও"
+        description: "শাহজালাল (রহ.) ইসলামী দাওয়াহ সেন্টার পরিচিতি ভিডিও"
     },
     {
         videoLink: "https://www.youtube.com/embed/8_ACB_MY4-s",
