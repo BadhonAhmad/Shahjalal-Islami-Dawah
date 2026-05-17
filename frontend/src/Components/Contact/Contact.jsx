@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import icon_facebook from "../Assets/facebook.png";
 import icon_gmail from "../Assets/gmail.png";
 import { useLocation } from "react-router-dom";
 
@@ -55,6 +56,14 @@ const Contact = () => {
                 className="w-10 h-10 rounded-full bg-amber-100 hover:bg-amber-200 flex items-center justify-center transition-all duration-200 hover:scale-110"
               >
                 <img src={icon_gmail} alt="Gmail" className="w-5 h-5" />
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=61589607390707"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-blue-100 hover:bg-blue-200 flex items-center justify-center transition-all duration-200 hover:scale-110"
+              >
+                <img src={icon_facebook} alt="Facebook" className="w-5 h-5" />
               </a>
             </div>
           </div>
