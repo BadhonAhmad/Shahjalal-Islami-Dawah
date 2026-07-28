@@ -47,9 +47,22 @@ const gallery = [
     // কুরবানী
     { image: "/qurbani/qurbani1.png", category: "কুরবানী" },
     { image: "/qurbani/qurbani2.png", category: "কুরবানী" },
+    { image: "/qurbani/goat.jpeg", category: "কুরবানী" },
+    { image: "/qurbani/goat1.jpeg", category: "কুরবানী" },
+    { image: "/qurbani/goat2.jpeg", category: "কুরবানী" },
+    { image: "/qurbani/image.png", category: "কুরবানী" },
 
     // উদ্বোধনী অনুষ্ঠান
     { image: "/opening_ceremony/opening1.png", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening3.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening4.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening5.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening6.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening7.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening8.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening9.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening10.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening11.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
 ];
 
 export default gallery;
