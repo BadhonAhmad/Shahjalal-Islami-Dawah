@@ -1,12 +1,15 @@
 const gallery = [
-    // হালাকা
-    { image: "/halakah/halakah.jpeg", category: "হালাকা" },
-    { image: "/halakah/halakah2.jpeg", category: "হালাকা" },
-    { image: "/halakah/halakah3_prize_giving.jpeg", category: "হালাকা" },
-    { image: "/halakah/dhormo_sova.jpeg", category: "হালাকা" },
-    { image: "/halakah/seminar.jpeg", category: "হালাকা" },
-    { image: "/halakah/seminar_in_sust.jpeg", category: "হালাকা" },
-    { image: "/halakah/non_muslim_accepting_islam_to_mufti_jubaer_hujur.jpeg", category: "হালাকা" },
+    // উদ্বোধনী অনুষ্ঠান
+    { image: "/opening_ceremony/opening1.png", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening3.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening4.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening5.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening6.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening7.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening8.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening9.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening10.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    { image: "/opening_ceremony/opening11.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
 
     // দাওয়াত
     { image: "/dawah/dawah_to_non_muslim1.jpeg", category: "দাওয়াত" },
@@ -25,25 +28,6 @@ const gallery = [
     { image: "/dawah/dawah4.jpeg", category: "দাওয়াত" },
     { image: "/dawah/dawah5.jpeg", category: "দাওয়াত" },
 
-    // খাদ্য বিতরণ
-    { image: "/FoodDistribution/foods.jpeg", category: "খাদ্য বিতরণ" },
-    { image: "/FoodDistribution/foods2.jpeg", category: "খাদ্য বিতরণ" },
-
-    // ঈদ উপহার
-    { image: "/EidGift/EidGift.jpeg", category: "ঈদ উপহার" },
-    { image: "/EidGift/EidGiftToNouMuslim.jpeg", category: "ঈদ উপহার" },
-    { image: "/EidGift/EidGiftToNouMuslim2.jpeg", category: "ঈদ উপহার" },
-
-    // ইফতার মাহফিল
-    { image: "/iftar/nou_muslim_der_k_niye_iftar.jpeg", category: "ইফতার মাহফিল" },
-
-    // কুরআন শিক্ষা
-    { image: "/QuranShikkha/boyoshokoder_quran_shikkha.jpg", category: "কুরআন শিক্ষা" },
-    { image: "/QuranShikkha/sorbosadharon.jpg", category: "কুরআন শিক্ষা" },
-
-    // শিশু কর্মসূচি
-    { image: "/Childs/halakah3_prize_giving.jpeg", category: "শিশু কর্মসূচি" },
-
     // কুরবানী
     { image: "/qurbani/qurbani1.png", category: "কুরবানী" },
     { image: "/qurbani/qurbani2.png", category: "কুরবানী" },
@@ -52,17 +36,29 @@ const gallery = [
     { image: "/qurbani/goat2.jpeg", category: "কুরবানী" },
     { image: "/qurbani/image.png", category: "কুরবানী" },
 
-    // উদ্বোধনী অনুষ্ঠান
-    { image: "/opening_ceremony/opening1.png", category: "উদ্বোধনী অনুষ্ঠান" },
-    { image: "/opening_ceremony/opening3.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
-    { image: "/opening_ceremony/opening4.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
-    { image: "/opening_ceremony/opening5.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
-    { image: "/opening_ceremony/opening6.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
-    { image: "/opening_ceremony/opening7.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
-    { image: "/opening_ceremony/opening8.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
-    { image: "/opening_ceremony/opening9.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
-    { image: "/opening_ceremony/opening10.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
-    { image: "/opening_ceremony/opening11.jpeg", category: "উদ্বোধনী অনুষ্ঠান" },
+    // ইফতার মাহফিল
+    { image: "/iftar/nou_muslim_der_k_niye_iftar.jpeg", category: "ইফতার মাহফিল" },
+
+    // ঈদ উপহার
+    { image: "/EidGift/EidGift.jpeg", category: "ঈদ উপহার" },
+    { image: "/EidGift/EidGiftToNouMuslim.jpeg", category: "ঈদ উপহার" },
+    { image: "/EidGift/EidGiftToNouMuslim2.jpeg", category: "ঈদ উপহার" },
+
+    // হালাকা
+    { image: "/halakah/halakah.jpeg", category: "হালাকা" },
+    { image: "/halakah/halakah2.jpeg", category: "হালাকা" },
+    { image: "/halakah/halakah3_prize_giving.jpeg", category: "হালাকা" },
+    { image: "/halakah/dhormo_sova.jpeg", category: "হালাকা" },
+    { image: "/halakah/seminar.jpeg", category: "হালাকা" },
+    { image: "/halakah/seminar_in_sust.jpeg", category: "হালাকা" },
+    { image: "/halakah/non_muslim_accepting_islam_to_mufti_jubaer_hujur.jpeg", category: "হালাকা" },
+
+    // কুরআন শিক্ষা
+    { image: "/QuranShikkha/boyoshokoder_quran_shikkha.jpg", category: "কুরআন শিক্ষা" },
+    { image: "/QuranShikkha/sorbosadharon.jpg", category: "কুরআন শিক্ষা" },
+
+    // শিশু কর্মসূচি
+    { image: "/Childs/halakah3_prize_giving.jpeg", category: "শিশু কর্মসূচি" }
 ];
 
 export default gallery;

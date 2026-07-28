@@ -4,7 +4,7 @@ import PicSidebar from '../Components/PicSidebar/PicSidebar'
 
 const Picture = () => {
   return (
-    <div>
+    <div className="min-h-[70vh]">
     <PicSidebar/>
     </div>
   )
