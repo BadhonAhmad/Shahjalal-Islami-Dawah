@@ -186,19 +186,12 @@ const StoryDetail = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-teal-50">
-      {/* Hero Image */}
-      <div className="relative h-64 sm:h-80 md:h-[400px] overflow-hidden">
-        <img
-          src={story.image}
-          alt={story.title}
-          className="w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
-
+      {/* Hero Header without image */}
+      <div className="relative bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 py-12 sm:py-16 md:py-24">
         {/* Back button */}
         <Link
           to="/hedayat"
-          className="absolute top-4 sm:top-6 left-4 sm:left-6 inline-flex items-center gap-2 px-4 py-2 bg-white/15 backdrop-blur-md text-white rounded-full text-sm font-medium hover:bg-white/25 transition-all border border-white/20"
+          className="absolute top-4 sm:top-6 left-4 sm:left-6 inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-md text-white rounded-full text-sm font-medium hover:bg-white/20 transition-all border border-white/10"
         >
           <svg className="w-4 h-4 rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
@@ -206,25 +199,22 @@ const StoryDetail = () => {
           ফিরে যান
         </Link>
 
-        {/* Title overlay */}
-        <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-8 md:p-12">
-          <div className="max-w-3xl mx-auto">
-            <div className="flex items-center gap-3 mb-3">
-              <span className="px-3 py-1 bg-teal-500/80 backdrop-blur-sm text-white text-xs font-semibold rounded-full">
-                হেদায়াতের গল্প
-              </span>
-              <span className="text-white/70 text-sm">
-                {new Date(story.date).toLocaleDateString("bn-BD", {
-                  year: "numeric",
-                  month: "long",
-                  day: "numeric",
-                })}
-              </span>
-            </div>
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight drop-shadow-lg">
-              {story.title}
-            </h1>
+        <div className="max-w-3xl mx-auto px-6 sm:px-8 md:px-12 mt-10">
+          <div className="flex flex-wrap items-center gap-3 mb-4">
+            <span className="px-3 py-1 bg-teal-500 text-white text-xs font-semibold rounded-full">
+              হেদায়াতের গল্প
+            </span>
+            <span className="text-white/70 text-sm font-medium">
+              {new Date(story.date).toLocaleDateString("bn-BD", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })}
+            </span>
           </div>
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-white leading-tight">
+            {story.title}
+          </h1>
         </div>
       </div>
 
