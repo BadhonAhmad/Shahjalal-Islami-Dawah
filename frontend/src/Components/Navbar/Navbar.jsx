@@ -77,19 +77,19 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Top row: logo + donate button */}
           <div className="flex items-center justify-between py-4">
-            <div className="flex items-center gap-4">
-              <div className="relative group">
-                <img src={logo} alt="Logo" className="h-20 w-20 rounded-lg object-contain" />
+            <Link to="/" className="flex items-center gap-4 cursor-pointer group" onClick={() => setIsNavbarVisible(false)}>
+              <div className="relative">
+                <img src={logo} alt="Logo" className="h-20 w-20 rounded-lg object-contain transition-transform group-hover:scale-105" />
               </div>
               <div>
-                <p className="text-xl md:text-2xl font-bold text-white leading-tight tracking-wide">
+                <p className="text-xl md:text-2xl font-bold text-white leading-tight tracking-wide group-hover:text-teal-300 transition-colors">
                   শাহজালাল (রহ.) ইসলামী দাওয়াহ সেন্টার
                 </p>
                 <p className="text-xs md:text-sm text-teal-300/80 font-medium">
                   সিলেট বিভাগীয় নওমুসলিম মারকায
                 </p>
               </div>
-            </div>
+            </Link>
 
             {/* Desktop donate button with pulse animation */}
             <div className="hidden md:flex items-center gap-3">
@@ -162,16 +162,16 @@ const Navbar = () => {
           <div className="h-[2px] bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400" />
 
           <div className="p-6">
-            <div className="flex items-center gap-3 mb-10 pb-6 border-b border-white/10">
+            <Link to="/" className="flex items-center gap-3 mb-10 pb-6 border-b border-white/10 group cursor-pointer" onClick={() => setIsNavbarVisible(false)}>
               <div className="relative">
-                <div className="absolute -inset-1 bg-amber-400/20 rounded-full blur" />
-                <img src={logo} alt="Logo" className="relative h-16 w-16 rounded-lg object-contain" />
+                <div className="absolute -inset-1 bg-amber-400/20 rounded-full blur transition-all group-hover:bg-amber-400/40" />
+                <img src={logo} alt="Logo" className="relative h-16 w-16 rounded-lg object-contain transition-transform group-hover:scale-105" />
               </div>
               <div>
-                <p className="font-bold text-white text-lg">শাহজালাল (রহ.) ইসলামী দাওয়াহ সেন্টার</p>
+                <p className="font-bold text-white text-lg group-hover:text-teal-300 transition-colors">শাহজালাল (রহ.) ইসলামী দাওয়াহ সেন্টার</p>
                 <p className="text-xs text-teal-400/70">সিলেট বিভাগীয় নওমুসলিম মারকায</p>
               </div>
-            </div>
+            </Link>
 
             <ul className="flex flex-col gap-1">
               {menuItems.map((item) => (
