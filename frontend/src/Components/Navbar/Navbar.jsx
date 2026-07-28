@@ -109,15 +109,15 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* Desktop nav links - centered with animated underlines */}
-          <div className="hidden md:block border-t border-white/10">
-            <ul className="flex items-center justify-center gap-1 py-1">
+          {/* Nav links - always visible, horizontally scrollable on mobile */}
+          <div className="border-t border-white/10">
+            <ul className="flex items-center md:justify-center gap-1 py-1 overflow-x-auto scrollbar-hide" style={{ WebkitOverflowScrolling: 'touch', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
               {menuItems.map((item) => (
-                <li key={item.key}>
+                <li key={item.key} className="flex-shrink-0">
                   <Link
                     to={item.to}
                     onClick={() => handleMenuItemClick(item.key)}
-                    className="relative px-5 py-3 rounded-lg text-sm font-medium transition-all duration-300 inline-block group"
+                    className="relative px-4 md:px-5 py-2.5 md:py-3 rounded-lg text-xs md:text-sm font-medium transition-all duration-300 inline-block group whitespace-nowrap"
                   >
                     <span
                       className={`relative z-10 transition-colors duration-300 ${
