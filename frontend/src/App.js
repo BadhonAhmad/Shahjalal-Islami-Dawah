@@ -9,6 +9,8 @@ import Video from "./Pages/Video";
 import Activities from "./Pages/Activities";
 import Membership from "./Pages/Membership";
 import ContactPage from "./Pages/Contact";
+import HedayaterGolpo from "./Pages/HedayaterGolpo";
+import StoryDetail from "./Pages/StoryDetail";
 import SuccessDonation from "./Components/DonationStatus/SuccessDonation.jsx";
 import FailedDonation from "./Components/DonationStatus/FailedDonation.jsx";
 
@@ -25,6 +27,8 @@ function App() {
           <Route path="/activities" element={<Activities />} />
           <Route path="/membership" element={<Membership />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/hedayat" element={<HedayaterGolpo />} />
+          <Route path="/hedayat/:slug" element={<StoryDetail />} />
           <Route path="/donation/success" element={<SuccessDonation />} />
           <Route path="/donation/fail" element={<FailedDonation />} />
         </Routes>
@@ -35,3 +39,4 @@ function App() {
 }
 
 export default App;
+

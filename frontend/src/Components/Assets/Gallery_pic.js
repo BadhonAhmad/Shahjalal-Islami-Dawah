@@ -43,6 +43,13 @@ const gallery = [
 
     // শিশু কর্মসূচি
     { image: "/Childs/halakah3_prize_giving.jpeg", category: "শিশু কর্মসূচি" },
+
+    // কুরবানী
+    { image: "/qurbani/qurbani1.png", category: "কুরবানী" },
+    { image: "/qurbani/qurbani2.png", category: "কুরবানী" },
+
+    // উদ্বোধনী অনুষ্ঠান
+    { image: "/opening_ceremony/opening1.png", category: "উদ্বোধনী অনুষ্ঠান" },
 ];
 
 export default gallery;

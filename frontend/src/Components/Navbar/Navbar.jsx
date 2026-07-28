@@ -58,6 +58,7 @@ const Navbar = () => {
     { key: "activities", label: "আমাদের কার্যক্রম", to: "/activities" },
     { key: "membership", label: "সদস্য হন", to: "/membership" },
     { key: "gellary", label: "গ্যালারি", to: "/gallery" },
+    { key: "hedayat", label: "হেদায়াতের গল্প", to: "/hedayat" },
     { key: "jogajog", label: "যোগাযোগ", to: "/contact" },
   ];
 
